@@ -1,0 +1,33 @@
+[user]
+    name = Olivier Debbah
+    email = o.debbah@gmail.com
+[core]
+    autocrlf = input
+    filemode = false
+[alias]
+    amend = commit --amend
+    br = branch
+    co = checkout
+    commitcount = rev-list master.. --count
+    diffcach = diff --cached # diff staged content only
+    diffsum = diff --summary # merely show files, not detailed diff
+    # diffU = diff -U # allow to diff with <N> lines of context - NOT WORKING, SEE GIT ALIAS WITH PARAMETERS :'(
+    mnf = merge --no-ff
+    pod = pull origin develop
+    showfiles = show --pretty="format:" --name-only
+    stt = status
+    sts = stash
+    trk = checkout --track
+    trkname = checkout -b # trkname <local branch> <remote qualified branch>
+    repourl = config --get remote.origin.url
+    fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
+[color]
+    branch = true
+    diff = true
+    interactive = true
+    status = true
+    ui = true
+[push]
+    default = current
+[pull]
+    default = current
