@@ -14,6 +14,8 @@
     # diffU = diff -U # allow to diff with <N> lines of context - NOT WORKING, SEE GIT ALIAS WITH PARAMETERS :'(
     # searchincommit = log -S # log -Stext (or -S"w1 w2" for several words) searches "text" in commits - NOT WORKING, SEE GIT ALIAS WITH PARAMETERS :'(
     mnf = merge --no-ff
+    po = pull origin
+    pom = pull origin master
     pod = pull origin develop
     showfiles = show --pretty="format:" --name-only
     stt = status
