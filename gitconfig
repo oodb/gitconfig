@@ -9,6 +9,7 @@
     br = branch
     co = checkout
     commitcount = rev-list master.. --count
+    difflast = diff HEAD~1
     diffs = diff --staged # diff staged content only
     diffsum = diff --summary # merely show files, not detailed diff
     # diffU = diff -U # allow to diff with <N> lines of context - NOT WORKING, SEE GIT ALIAS WITH PARAMETERS :'(
