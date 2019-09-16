@@ -25,6 +25,7 @@
     trkname = checkout -b # trkname <local branch> <remote qualified branch>
     repourl = config --get remote.origin.url
     fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
+    unstage = reset --
 [color]
     branch = true
     diff = true
