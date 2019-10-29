@@ -18,6 +18,7 @@
     po = pull origin
     pom = pull origin master
     pod = pull origin develop
+    shl = show HEAD
     showfiles = show --pretty="format:" --name-only
     stt = status
     sts = stash
@@ -27,6 +28,7 @@
     repourl = config --get remote.origin.url
     fshow = ! sh -c 'git show --pretty="format:" --name-only $1 | grep -v "^$" | uniq | sed -e "s#^#`git rev-parse --show-toplevel`/#"' -
     unstage = reset --
+    updateremotebr = remote update origin --prune
 [color]
     branch = true
     diff = true
