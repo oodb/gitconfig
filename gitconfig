@@ -22,6 +22,7 @@
     showfiles = show --pretty="format:" --name-only
     stt = status
     sts = stash
+    stsuntracked = stash -u
     trk = checkout --track
     trkname = checkout -b # trkname <local branch> <remote qualified branch>
     renamelocal = branch -m
