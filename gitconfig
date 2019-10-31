@@ -18,6 +18,7 @@
     po = pull origin
     pom = pull origin master
     pod = pull origin develop
+    rollback = reset --soft HEAD~1
     shl = show HEAD
     showfiles = show --pretty="format:" --name-only
     stt = status
