@@ -9,6 +9,7 @@
     br = branch
     co = checkout
     commitcount = rev-list master.. --count
+    diffis = diff --ignore-space-change
     difflast = diff HEAD~1
     diffs = diff --staged # diff staged content only
     diffsum = diff --summary # merely show files, not detailed diff
