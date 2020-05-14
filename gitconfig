@@ -9,6 +9,7 @@
     br = branch
     co = checkout
     commitcount = rev-list master.. --count
+    deleteremotebr = git push origin --delete # deleteremotebr <unqualified remote branch>
     diffis = diff --ignore-space-change
     difflast = diff HEAD~1
     diffs = diff --staged # diff staged content only
